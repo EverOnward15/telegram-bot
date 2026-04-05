@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Telegram bot setup
-const bot = new Telegraf("8043063927:AAHtd0_EqjuR_mjRk_VriFHfOpu_PqWcNk8");
+const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.start((ctx) => {
   ctx.reply("Click the Open Wallet button below");
